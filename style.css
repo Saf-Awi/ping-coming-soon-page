@@ -1,0 +1,196 @@
+
+:root {
+    --primary-clr-Blue: hsl(223, 87%, 63%);
+    --secondry-clr-Pale-Blue: hsl(223, 100%, 88%);
+    --secondry-clr-Light-Red: hsl(354, 100%, 66%);
+    --neutral-Gray: hsl(0, 0%, 59%);
+    --neutral-Very-Dark-Blue: hsl(209, 33%, 12%);
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+
+
+body {
+    min-width: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    color: var(--neutral-Gray);
+    text-align: center;
+    padding: 30px;
+    
+}
+
+.header-text {
+    font-weight: 400;
+}
+
+span {
+    font-weight: 700;
+    color: var(--neutral-Very-Dark-Blue);
+}
+
+.subscribe {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--neutral-Very-Dark-Blue);
+    
+}
+
+#email {
+    width: 350px;
+    height: 27px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    outline: none;
+    text-align: left;
+    
+
+}
+
+#submit {
+    width: 150px;
+    height: 50px;
+    border: 1px solid var(--secondry-clr-Pale-Blue);
+    border-radius: 30px;
+    color: white;
+    background-color: var(--primary-clr-Blue);
+    cursor: pointer;
+    margin-left: 20px;
+    
+}
+
+#email::placeholder {
+    color: var(--secondry-clr-Pale-Blue);  
+
+}
+
+#email:focus {
+    outline: none;
+}
+
+.subscribtion-form {
+    margin-bottom: 100px;
+    
+}
+
+#form {
+    margin-top: 50px;
+    display: flex;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.success {
+    border: 1px solid var(--secondry-clr-Pale-Blue);
+}
+
+.error {
+    border: 1px solid var(--secondry-clr-Light-Red);
+}
+
+.error-msg {
+    color: var(--secondry-clr-Light-Red);
+    font-size: 13px;
+    position: relative;
+    right: 70px;
+
+    
+}
+
+#submit:active {
+    background-color: var(--secondry-clr-Pale-Blue);
+}
+
+.main-img, .illustration-dashboard-img {
+    width: 500px;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--primary-clr-Blue);
+    border: 1px solid var(--secondry-clr-Pale-Blue);
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+  
+}
+
+.twitter, .instagram {
+    margin-left: 10px;
+}
+
+.socials {
+    margin-top: 50px;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 769px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #form {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #submit {
+        width: 390px;
+        position: relative;
+        left: -10px;
+        margin-top: -25px;
+       
+
+    }
+
+    .input-container {
+        position: relative;
+        left: 10px;
+    }
+
+    .error-msg {
+        margin-bottom: 40px;
+        position: relative;
+        right: 30px;
+    }
+
+    .subscribe {
+        position: relative;
+        right: 24px;
+    }
+
+    .header {
+        padding: 0 100px;
+        position: relative;
+        right: 30px;
+    }
+
+    .header-text {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    .main-img, .illustration-dashboard-img {
+        width: 440px;
+        position: relative;
+        right: 10px;
+    }
+
+}
